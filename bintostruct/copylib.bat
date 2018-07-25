@@ -1,0 +1,1 @@
+D:\Qt\Qt5.11.0\5.11.0\mingw53_32\bin\windeployqt.exe firstpro.exe
