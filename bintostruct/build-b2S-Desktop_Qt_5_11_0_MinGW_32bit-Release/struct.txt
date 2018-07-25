@@ -1,0 +1,288 @@
+struct SWNZProtClient: {
+    magic(length:8b): C
+    flag(length:4b): 1
+    cmd(length:10b): 69
+    len(length:10b): 259
+    room_id(length:32b): 469561344
+    crc(length:8b): 0
+}
+struct SWNZClientSequence: {
+    seqno(length:16b): 0
+    times(length:8b): 1
+}
+struct S2C_COMBINED_PKGS{
+    bPkgCount(BYTE): 3
+    struct S2C_COMBINED_PKG_ITEM[0]{
+        wDataLen(UINT16): 256
+        struct S2C_SYNC_INVENTORY_BAG (value:69) {
+            BagCount(Byte):  2
+            Bags[0] {
+                BagId(UInt16):  0
+                Name(Byte, count(32)): Loadout1                        
+                Selected(Byte):  1
+                WeaponCount(Byte):  3
+                Weapons[0] {
+                    ItemID(UInt32):  10109000
+                    SlotIdx(Byte):  1
+                    Level(UInt16):  1
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402579
+                }
+                Weapons[1] {
+                    ItemID(UInt32):  10604001
+                    SlotIdx(Byte):  2
+                    Level(UInt16):  1
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402580
+                }
+                Weapons[2] {
+                    ItemID(UInt32):  10702001
+                    SlotIdx(Byte):  3
+                    Level(UInt16):  0
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402581
+                }
+                GrenadeCount(Byte):  1
+                Grenades[0] {
+                    Count(Byte):  1
+                    GrenadeId(UInt32):  40101005
+                }
+                PerkCount(Byte):  0
+                Perks {
+                    PerkId(UInt32):
+                }
+                Role[0] {
+                    RoleId(UInt32):  108801002
+                    SkillCount(Byte):  0
+                    Skills {
+                        VarId(UInt16):
+                        VarValue(UInt32):
+                    }
+                }
+                Jetpack(UInt32):  0
+            }
+            Bags[1] {
+                BagId(UInt16):  1
+                Name(Byte, count(32)): Loadout2                        
+                Selected(Byte):  0
+                WeaponCount(Byte):  3
+                Weapons[0] {
+                    ItemID(UInt32):  10305000
+                    SlotIdx(Byte):  1
+                    Level(UInt16):  1
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402583
+                }
+                Weapons[1] {
+                    ItemID(UInt32):  10604001
+                    SlotIdx(Byte):  2
+                    Level(UInt16):  1
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402584
+                }
+                Weapons[2] {
+                    ItemID(UInt32):  10702001
+                    SlotIdx(Byte):  3
+                    Level(UInt16):  0
+                    Optic[0] {
+                        OpticId(UInt32):  0
+                        ReticleId(UInt32):  0
+                    }
+                    AttachmentCount(Byte):  0
+                    Attachments {
+                        AttachmentId(UInt32):
+                    }
+                    SkillCount(Byte):  0
+                    Skills {
+                        SkillId(UInt32):
+                    }
+                    CamoID(UInt32):  0
+                    ActorId(Int32):  402585
+                }
+                GrenadeCount(Byte):  1
+                Grenades[0] {
+                    Count(Byte):  1
+                    GrenadeId(UInt32):  40101005
+                }
+                PerkCount(Byte):  0
+                Perks {
+                    PerkId(UInt32):
+                }
+                Role[0] {
+                    RoleId(UInt32):  108801004
+                    SkillCount(Byte):  0
+                    Skills {
+                        VarId(UInt16):
+                        VarValue(UInt32):
+                    }
+                }
+                Jetpack(UInt32):  0
+            }
+        }
+    }
+    The right length of S2C_COMBINED_RELIABLE_PKGS body is:2048
+
+    struct S2C_COMBINED_PKG_ITEM[1]{
+        wDataLen(UINT16): 161
+        struct S2C_SYNC_INVENTORY_BAG (value:69) {
+            BagCount(Byte):  1
+            Bags[0] {
+                BagId(UInt16):  16
+                Name(Byte, count(32)): abcdefg                         
+                Selected(Byte):  1
+                WeaponCount(Byte):  2
+                Weapons[0] {
+                    ItemID(UInt32):  21
+                    SlotIdx(Byte):  22
+                    Level(UInt16):  23
+                    Optic[0] {
+                        OpticId(UInt32):  777
+                        ReticleId(UInt32):  888
+                    }
+                    AttachmentCount(Byte):  3
+                    Attachments[0] {
+                        AttachmentId(UInt32):  55
+                    }
+                    Attachments[1] {
+                        AttachmentId(UInt32):  66
+                    }
+                    Attachments[2] {
+                        AttachmentId(UInt32):  77
+                    }
+                    SkillCount(Byte):  1
+                    Skills[0] {
+                        SkillId(UInt32):  77
+                    }
+                    CamoID(UInt32):  78
+                    ActorId(Int32):  79
+                }
+                Weapons[1] {
+                    ItemID(UInt32):  21
+                    SlotIdx(Byte):  22
+                    Level(UInt16):  23
+                    Optic[0] {
+                        OpticId(UInt32):  777
+                        ReticleId(UInt32):  888
+                    }
+                    AttachmentCount(Byte):  3
+                    Attachments[0] {
+                        AttachmentId(UInt32):  55
+                    }
+                    Attachments[1] {
+                        AttachmentId(UInt32):  66
+                    }
+                    Attachments[2] {
+                        AttachmentId(UInt32):  77
+                    }
+                    SkillCount(Byte):  1
+                    Skills[0] {
+                        SkillId(UInt32):  77
+                    }
+                    CamoID(UInt32):  78
+                    ActorId(Int32):  79
+                }
+                GrenadeCount(Byte):  2
+                Grenades[0] {
+                    Count(Byte):  44
+                    GrenadeId(UInt32):  444
+                }
+                Grenades[1] {
+                    Count(Byte):  55
+                    GrenadeId(UInt32):  555
+                }
+                PerkCount(Byte):  2
+                Perks[0] {
+                    PerkId(UInt32):  9999
+                }
+                Perks[1] {
+                    PerkId(UInt32):  8888
+                }
+                Role[0] {
+                    RoleId(UInt32):  1111
+                    SkillCount(Byte):  2
+                    Skills[0] {
+                        VarId(UInt16):  6666
+                        VarValue(UInt32):  7777
+                    }
+                    Skills[1] {
+                        VarId(UInt16):  8888
+                        VarValue(UInt32):  9999
+                    }
+                }
+                Jetpack(UInt32):  25
+            }
+        }
+    }
+    The right length of S2C_COMBINED_RELIABLE_PKGS body is:1288
+
+    struct S2C_COMBINED_PKG_ITEM[2]{
+        wDataLen(UINT16): 13
+        struct S2C_NTF_SUCK_ZOMBIE (value:43) {
+            PlayerId(UInt32):  123
+            TargetPlayerId(UInt32):  123
+            Result(Int32):  234
+        }
+    }
+    The right length of S2C_COMBINED_RELIABLE_PKGS body is:104
+
+}
